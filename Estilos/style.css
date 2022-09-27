@@ -1,0 +1,782 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*mobile @media screen and (max-width:767px)*/
+/*body*/
+
+header {
+    background-color: rgb(96, 94, 94);
+    margin-top: 0em;
+    font-size: larger;
+    display: grid;
+    justify-content: space-between;
+    padding: 1.5em;
+}
+
+.btn-outline-success {
+    color: white;
+    border: 1px solid white;
+}
+
+.nav-link,
+.navbar-brand {
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: rgb(229, 188, 151);
+}
+
+
+
+h1 {
+    color: rgb(82, 38, 25);
+    text-align: center;
+    padding: 1em;
+    margin: 1em 1em 0.5em 1em;
+    font-size: 2em;
+
+}
+
+h2,
+h3 {
+    color: rgb(82, 38, 25);
+    padding: 1em;
+    margin: 0.5em 1em 0.5em 1.5em;
+    font-size: 1.5em;
+}
+
+p {
+    color: black;
+    padding: 1em;
+    text-align: justify;
+    margin: -2em 3em 0.5em 3em;
+
+}
+
+
+/*footer*/
+footer {
+    background-color: rgb(96, 94, 94);
+    color: white;
+    margin-top: 1.5em;
+    padding: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+}
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: normal;
+    text-align: center;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    padding: 1em;
+}
+
+.pieP {
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.pieP h3 {
+    color: white;
+    margin-left: 0.5em;
+}
+
+.icon {
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5em;
+    margin-bottom: 1em;
+}
+
+/*index*/
+
+.bannerInicio {
+    height: 16em;
+    width: 100%;
+    padding: 1;
+    margin: 0;
+    box-shadow: 16px 24px 13px -9px rgba(82, 38, 25);
+}
+
+.fotoCentral {
+    margin: 1em 0.5em 0.5em 4em;
+    width: 80%;
+}
+
+/*servicio*/
+.bannerServicio {
+    background-image: url("../Imagenes/bannerservicios.jpg");
+    height: 25em;
+    width: 100%;
+    margin-top: 0em;
+    padding: 1em;
+}
+
+img {
+    margin-top: 0.5em;
+    margin-left: 4em;
+    margin-bottom: 2em;
+    width: 15em;
+    height: 15em;
+
+}
+
+.serviciosRh {
+    padding: 2;
+}
+
+.serviciosP {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+/*busquedas*/
+
+.linkCv {
+    margin: 0em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.cargarCv {
+    color: rgb(82, 38, 25);
+    font-weight: 700;
+    border: 1px solid rgb(82, 38, 25);
+    padding: 0.5em;
+    margin-right: 5em;
+}
+
+.busquedaiT {
+    background-color: rgb(220, 182, 146);
+    height: 24em;
+    width: 100%;
+    margin-top: 2em;
+    box-shadow: 16px 24px 13px -9px rgb(104, 66, 13)
+}
+
+.buscadorT {
+    margin-top: 3.5em;
+    margin-left: 1em;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    font-weight: 600;
+    height: 2.5em;
+}
+
+.buscadorV {
+    width: 30em;
+    height: 2.5em;
+}
+
+.linkBusqueda {
+    margin: 0em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.bannerBusqueda {
+    background-image: url("../Imagenes/fondobusqueda.jpg");
+    height: 35em;
+    margin-top: 0em;
+    width: 100%;
+    padding: 1em;
+}
+
+.masEmpleo{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: 2.5em 2em 0.5em 0.5em;
+    
+}
+
+
+/*cursos*/
+
+.bannerCurso {
+    width: 100%;
+    padding: 1;
+    margin: 0;
+    height: 14em;
+    box-shadow: 16px 24px 13px -9px rgba(82, 38, 25);
+}
+
+.imgcursoUno {
+    width: 12em;
+    height: 10em;
+    padding: 0;
+
+}
+
+.imgcursoDos {
+    width: 12em;
+    height: 10em;
+    padding: 0;
+    margin-right: 5em;
+}
+
+/*Curso Derecha*/
+
+.cursoUno {
+    height: 100%;
+    display: grid;
+    margin: 0.5em -5em -5em 1em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "imgcursoUno titulocursoUno"
+        "parrafocursoUno parrafocursoUno"
+        "linkCursod linkCursod";
+    grid-column-gap: 0;
+    padding: 0;
+}
+
+.imgcursoUno {
+    grid-area: imgcursoUno;
+}
+
+.titulocursoUno {
+    grid-area: titulocursoUno;
+    
+}
+
+.parrafocursoUno {
+    grid-area: parrafocursoUno;
+    margin-top: -3em;
+}
+
+.linkCursod {
+    grid-area: linkCursod;
+}
+
+/*curso Izquierda*/
+.cursoDos {
+    height: 100%;
+    margin: -10em 5em -10em 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "titulocursoDos imgcursoDos"
+        "parrafocursoDos parrafocursoDos"
+        "linkCursoi linkCursoi";
+    grid-column-gap: 0em;
+    padding: 0;
+}
+
+.imgcursoDos {
+    grid-area: imgcursoDos;
+}
+
+.titulocursoDos {
+    grid-area: titulocursoDos;
+}
+
+.parrafocursoDos {
+    grid-area: parrafocursoDos;
+    margin-top: -3.5em;
+}
+
+.linkCursoi {
+    grid-area: linkCursoi;
+}
+
+.linkCursod {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin-bottom: 0em;
+    margin-left: 3em;
+}
+
+.linkCursoi {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin-bottom: 0em;
+    margin-left: 3em;
+}
+
+
+.videoRh {
+    margin-left: 5em;
+    width: 25em;
+}
+
+/*contacto*/
+
+.tituloFormulario {
+    margin: 0;
+    height: 14em;
+    width: 100%;
+    box-shadow: 16px 24px 13px -9px rgba(82, 38, 25);
+    padding: 1;
+
+}
+
+form {
+    color: rgb(255, 255, 255);
+    margin-left: 5em;
+}
+
+
+/*grilla formulario*/
+
+.grillaF {
+    margin: 1% 30% 1% 12%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    grid-template-areas:
+        "nombreF nombreC"
+        "correoF correoC"
+        "contraF contraC"
+        "mensajeF mensajeC"
+        "mensajeF mensajeC"
+        "mensajeF mensajeC"
+        "mensajeF enviarC";
+    padding: 0;
+}
+
+.nombreF {
+    grid-area: nombreF;
+}
+
+.nombreC {
+    grid-area: nombreC;
+    width: 15em;
+    height: 50%;
+}
+
+.correoF {
+    grid-area: correoF;
+}
+
+.correoC {
+    grid-area: correoC;
+    width: 15em;
+    height: 50%;
+}
+
+.contraF {
+    grid-area: contraF;
+}
+
+.contraC {
+    grid-area: contraC;
+    width: 15em;
+    height: 50%;
+}
+
+.mensajeF {
+    grid-area: mensajeF;
+}
+
+.mensajeC {
+    grid-area: mensajeC;
+    width: 150%;
+}
+
+.enviarC {
+    grid-area: enviarC;
+    width: 10em;
+    height: 60%;
+}
+
+/*grilla mapa*/
+
+.grillaMapa {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 0;
+    margin: 0;
+    padding: 0;
+    grid-template-areas:
+        "tituloF tituloF"
+        "parrafoFuno mapa"
+        "parrafoFuno mapa"
+        "parrafoFuno mapa";
+}
+
+.tituloF {
+    grid-area: tituloF;
+}
+
+.mapa {
+    grid-area: mapa;
+    height: 18em;
+    width: 18em;
+    margin-left: 0em;
+}
+
+.parrafoFuno {
+    grid-area: parrafoFuno;
+    margin-left: 1em;
+    padding: 1em;
+    color: white;
+}
+
+
+/*Tablet*/
+
+@media screen and (min-width:768px) {
+
+    /*fotter*/
+    .icon{
+        margin-left: 6em;
+        margin-top: 1em;
+    }
+    
+    /*index*/
+    .fotoCentral {
+        height: 25em;
+        width: 40em;
+        margin-left: 6em;
+    }
+
+    /*servicio*/
+
+    .bannerServicio {
+        background-image: url("../Imagenes/bannerservicios.jpg");
+        height: 19em;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    img {
+        margin-top: 0em;
+        margin-bottom: 3em;
+        margin-left: 5em;
+        width: 15em;
+        height: 10em;
+
+    }
+
+    .serviciosP {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    .serviciosRh {
+        padding: 0;
+    }
+
+
+    /*busqueda*/
+    .bannerBusqueda {
+        height: 28em;
+    }
+
+    .busquedaiT {
+        height: 18em;
+    }
+
+    /*cursos*/
+    .videoRh {
+        margin-left: 7em;
+        width: 35em;
+    }
+    
+    /*cursos*/
+    /*cursos derecha*/
+    
+    
+    .imgcursoUno {
+        width: 16em;
+        height: 10em;
+        margin-top: 0em;
+    }
+
+    .cursoUno {
+        margin: 1.5em 5em -10em 5em;
+        padding: 0em;
+    }
+
+
+    .parrafocursoUno {
+        grid-area: parrafocursoUno;
+        margin-top: -1em;
+    }
+
+
+    /*curso Izquierda*/
+
+    .imgcursoDos {
+        width: 16em;
+        height: 10em;
+        margin-top: 0em;
+    }
+
+    .cursoDos {
+        margin: -10em 5em -10em 5em;
+        padding: 0;
+    }
+
+    .parrafocursoDos {
+        grid-area: parrafocursoDos;
+        margin-top: -1em;
+    }
+
+    /*formulario*/
+    .nombreC, .correoC, .contraC, .enviarC {
+        height: 90%;
+    }
+    
+
+    .grillaMapa {
+        margin-left: 5em;
+    }
+
+    .mapa {
+        height: 23em;
+        width: 23em;
+    }
+
+}
+
+/*pc*/
+
+@media screen and (min-width:1024px) {
+
+    
+    /*index*/
+    .fotoCentral {
+        height: 30em;
+        width: 65em;
+        margin-left: 10em;
+    }
+
+    .bannerInicio {
+        height: 14em;
+    }
+
+    /*servicio*/
+
+    .bannerServicio {
+        background-image: url("../Imagenes/bannerservicios.jpg");
+        height: 16em;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    img {
+        margin-top: 0.5em;
+        margin-left: 4em;
+        margin-bottom: 2em;
+        width: 25em;
+        height: 20em;
+
+    }
+
+    .serviciosP {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 1em;
+    }
+
+    .serviciosRh {
+        padding: 1em;
+    }
+
+    /*cursos*/
+    /*cursos Derecha*/
+.cursoUno {
+    height: 100%;
+    margin: 1em 1.5em 1em 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "imgcursoUno titulocursoUno titulocursoUno"
+        "imgcursoUno parrafocursoUno parrafocursoUno"
+        "imgcursoUno linkCursod linkCursod";
+}
+
+.imgcursoUno {
+    grid-area: imgcursoUno;
+    width: 20em;
+    height: 15em;
+    margin-top: 3em;
+}
+
+.titulocursoUno {
+    grid-area: titulocursoUno;
+}
+
+.parrafocursoUno {
+    grid-area: parrafocursoUno;
+    margin-top: -4em;
+}
+
+.linkCursod {
+    grid-area: linkCursod;
+}
+
+/*curso Izquierda*/
+.cursoDos {
+    height: 100%;
+    margin: -3em 0.5em -4em 0.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "titulocursoDos titulocursoDos imgcursoDos"
+        "parrafocursoDos parrafocursoDos imgcursoDos "
+        "linkCursoi linkCursoi imgcursoDos ";
+}
+
+.imgcursoDos {
+    grid-area: imgcursoDos;
+    width: 20em;
+    height: 15em;
+    margin-top: 3em;
+}
+
+.titulocursoDos {
+    grid-area: titulocursoDos;
+}
+
+.parrafocursoDos {
+    grid-area: parrafocursoDos;
+    margin-top: -4em;
+}
+
+    .videoRh {
+        margin-left: 8em;
+        width: 35em;
+    }
+
+    .linkCursod {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        list-style-type: none;
+        margin-bottom: 1em;
+    }
+
+    .linkCursoi {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        list-style-type: none;
+        margin-bottom: 1em;
+        margin-left: 0em;
+    }
+
+    /*busquedas*/
+
+    .linkCv {
+        margin-left: 2em;
+        margin-top: -2em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    .bannerBusqueda {
+        height: 23em;
+    }
+
+    .buscadorV {
+        width: 60em;
+    }
+
+    .busquedaiT {
+        height: 15em;
+    }
+    /*contacto*/
+    .nombreC, .correoC, .contraC {
+        height: 70%
+    }
+    .enviarC {
+        height: 90%
+    }
+
+    .mapa {
+        margin-left: 15em;
+        height: 25em;
+        width: 25em;
+    }
+
+    .mapa:hover {
+        transform: rotate(360deg) scale(1.5);
+        transition-property: all;
+        transition-duration: 2s;
+    }
+
+    .grillaF {
+        margin: 1% 32% 1% 32%;
+        grid-gap: 0.5em;
+        padding: 0;
+
+    }
+
+    .parrafoFuno {
+        margin-left: 3em;
+        padding: 1em;
+        width: 15em;
+        margin-top: -3em;
+    }
+
+    /*footer*/
+
+    a {
+        padding: 5em;
+    }
+
+    .redes {
+        margin: 0em 9em 0em 5em;
+        padding: 1em;
+    }
+
+
+    .icon {
+        width: 2em;
+        height: 2em;
+        margin-left: 5.5em;
+        margin-bottom: 1.5em;
+    }
+
+    .imgCurso {
+        width: 20em;
+        height: 15em;
+    }
+
+}
