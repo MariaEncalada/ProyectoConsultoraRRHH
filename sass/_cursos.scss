@@ -1,0 +1,72 @@
+/*mobile @media screen and (max-width:767px)*/
+/*GRILLA CURSOS*/
+
+.cursoUno {
+    height: 100%;
+    display: grid;
+    margin: 0.5em -1em -5em 0.5em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "imgcursoUno titulocursoUno"
+        "parrafocursoUno parrafocursoUno"
+        "linkCursod linkCursod";
+    grid-column-gap: 0;
+    padding: 0;
+
+    .imgcursoUno {
+        grid-area: imgcursoUno;
+        margin-left: 5em;
+    }
+
+    .titulocursoUno {
+        grid-area: titulocursoUno;
+        
+    }
+
+    .parrafocursoUno {
+        grid-area: parrafocursoUno;
+        margin-top: -2em;
+    }
+
+    .linkCursod {
+        grid-area: linkCursod;
+    }
+}
+
+/*curso Izquierda*/
+.cursoDos {
+    height: 100%;
+    margin: -5em -1em -10em 0.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "titulocursoDos imgcursoDos"
+        "parrafocursoDos parrafocursoDos"
+        "linkCursoi linkCursoi";
+    grid-column-gap: 0em;
+    padding: 0;
+
+    .titulocursoDos {
+        grid-area: titulocursoDos;
+    }
+
+    .parrafocursoDos {
+        grid-area: parrafocursoDos;
+        margin-top: -3em;
+    }
+    
+    .linkCursoi {
+    grid-area: linkCursoi;
+    }
+
+    .imgcursoDos {
+        grid-area: imgcursoDos;
+    }
+
+}
+
+
+
+
