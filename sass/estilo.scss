@@ -14,6 +14,25 @@
     width: $width;
 }
 
+/*header*/
+
+header {
+    background-color: rgb(96, 94, 94);
+    margin-top: 0em;
+    font-size: larger;
+    display: grid;
+    justify-content: space-between;
+    padding: 0em;
+}
+.btn-outline-success {
+    color: white;
+    border: 1px solid white;
+}
+
+.nav-link,
+.navbar-brand {
+    color: white;
+}
 
 /*index*/
 
@@ -68,7 +87,7 @@
 
 /*Grilla cursos*/
 .imgcursoUno {
-    @include size (10em, 12em);
+    @include    sizes(12em, 10em);
     padding: 0;
 }
 
@@ -189,6 +208,7 @@
 
     .mapa {
         margin-left: 15em;
+        margin-bottom: 5em;
         height: 25em;
         width: 25em;
     }
