@@ -9,10 +9,16 @@
 /*mobile @media screen and (max-width:767px)*/
 /*mixins*/
 
-@mixin size ($width, $height){
+@mixin sizes ($width, $height){
     height: $height;
     width: $width;
 }
+@mixin flex-row-flex-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
 
 /*header*/
 
@@ -87,7 +93,7 @@ header {
 
 /*Grilla cursos*/
 .imgcursoUno {
-    @include    sizes(12em, 10em);
+    @include sizes(12em, 10em);
     padding: 0;
 }
 
@@ -97,9 +103,7 @@ header {
 }
 
 .linkCursod {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    @include flex-row-flex-start;
     list-style-type: none;
     margin-bottom: 0em;
     margin-left: 3em;
@@ -133,8 +137,7 @@ header {
     
     /*index*/
     .fotoCentral {
-        height: 25em;
-        width: 40em;
+        @include sizes(40em, 20em);
         margin-left: 6em;
     }
 
@@ -175,8 +178,7 @@ header {
     
     /*index*/
     .fotoCentral {
-        height: 30em;
-        width: 65em;
+        @include sizes(65em, 30em);
         margin-left: 10em;
     }
 

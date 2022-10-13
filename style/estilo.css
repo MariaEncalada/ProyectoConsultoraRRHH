@@ -101,7 +101,7 @@ footer .redes .pieP a {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "imgcursoUno titulocursoUno" "parrafocursoUno parrafocursoUno" "linkCursod linkCursod";
-  grid-column-gap: 0;
+  grid-column-gap: 2em;
   padding: 0;
 }
 .cursoUno .imgcursoUno, .cursoUno .imgcursoDos {
@@ -117,6 +117,13 @@ footer .redes .pieP a {
 }
 .cursoUno .linkCursod, .cursoUno .linkCursoi {
   grid-area: linkCursod;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  list-style-type: none;
+  margin-bottom: 1em;
+  margin-right: 4em;
+  text-decoration: none;
 }
 
 /*curso Izquierda*/
@@ -127,7 +134,7 @@ footer .redes .pieP a {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "titulocursoDos imgcursoDos" "parrafocursoDos parrafocursoDos" "linkCursoi linkCursoi";
-  grid-column-gap: 0em;
+  grid-column-gap: 2em;
   padding: 0;
 }
 .cursoDos .titulocursoDos {
@@ -139,6 +146,13 @@ footer .redes .pieP a {
 }
 .cursoDos .linkCursoi {
   grid-area: linkCursoi;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  list-style-type: none;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  text-decoration: none;
 }
 .cursoDos .imgcursoDos {
   grid-area: imgcursoDos;
@@ -166,7 +180,7 @@ footer .redes .pieP a {
 
 .bannerBusqueda {
   background-image: url("../Imagenes/fondobusqueda.jpg");
-  height: 35em;
+  height: 37em;
   margin-top: 0em;
   width: 100%;
   padding: 1em;
@@ -304,24 +318,31 @@ footer .redes .pieP a {
   .cursoUno .imgcursoUno, .cursoUno .imgcursoDos {
     width: 16em;
     height: 10em;
-    margin-top: 0em;
+    margin-top: 1em;
   }
   .cursoUno .parrafocursoUno {
     grid-area: parrafocursoUno;
     margin-top: -1em;
   }
   .cursoDos {
-    margin: -10em 5em -10em 5em;
+    margin: 1em 5em -10em 5em;
     padding: 0;
   }
   .cursoDos .parrafocursoDos {
     grid-area: parrafocursoDos;
-    margin-top: -1em;
+    margin-top: 1em;
   }
   .cursoDos .imgcursoDos {
     width: 16em;
     height: 10em;
-    margin-top: 0em;
+    margin-top: 3em;
+  }
+  /*formulario*/
+  .nombreC, .correoC, .contraC {
+    height: 150%;
+  }
+  .enviarC {
+    height: 150%;
   }
   .grillaMapa {
     margin-left: 5em;
@@ -329,6 +350,7 @@ footer .redes .pieP a {
   .grillaMapa .mapa {
     height: 23em;
     width: 23em;
+    margin-bottom: 5em;
   }
 }
 /*PC*/
@@ -346,9 +368,8 @@ footer .redes .pieP a {
   .serviciosP .serviciosRh img {
     margin-top: 0.5em;
     margin-left: 4em;
-    margin-bottom: 2em;
-    width: 20em;
-    height: 20em;
+    height: 15em;
+    width: 15em;
   }
   /*cursos*/
   .cursoUno {
@@ -370,15 +391,10 @@ footer .redes .pieP a {
   }
   .cursoUno .parrafocursoUno {
     grid-area: parrafocursoUno;
-    margin-top: -4em;
+    margin-top: -3em;
   }
   .cursoUno .linkCursod, .cursoUno .linkCursoi {
     grid-area: linkCursod;
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    list-style-type: none;
-    margin-bottom: 1em;
   }
   .cursoDos {
     height: 100%;
@@ -399,19 +415,14 @@ footer .redes .pieP a {
   }
   .cursoDos .parrafocursoDos {
     grid-area: parrafocursoDos;
-    margin-top: -4em;
+    margin-top: -3em;
   }
   .cursoDos .linkCursoi {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    list-style-type: none;
-    margin-bottom: 1em;
-    margin-left: 0em;
+    grid-area: linkCursoi;
   }
   /*busquedas*/
   .bannerBusqueda {
-    height: 23em;
+    height: 20em;
   }
   .bannerBusqueda .linkCv {
     margin-left: 2em;
@@ -422,7 +433,7 @@ footer .redes .pieP a {
     list-style-type: none;
   }
   .bannerBusqueda .linkCv .buscadorV {
-    width: 60em;
+    width: 40em;
   }
   /*contacto*/
   .grillaF {
@@ -465,7 +476,7 @@ header {
   font-size: larger;
   display: grid;
   justify-content: space-between;
-  padding: 1.5em;
+  padding: 0em;
 }
 
 .btn-outline-success {
@@ -562,7 +573,7 @@ header {
   }
   /*index*/
   .fotoCentral {
-    height: 25em;
+    height: 20em;
     width: 40em;
     margin-left: 6em;
   }
